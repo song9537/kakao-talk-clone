@@ -55,3 +55,7 @@ user-component__avatar--sm {
   margin-bottom: 10px;
   display: block;
 }
+
+.user-component__column i {
+  color: black;
+}
