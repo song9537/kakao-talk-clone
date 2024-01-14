@@ -18,10 +18,23 @@
   color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   position: absolute;
   left: 17px;
   bottom: 17px;
+  animation: notificationAnimation 1.5s ease-in-out infinite;
 }
 
 .nav__notification2 {

@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - KakaoTalk Clone</title>
+    <title>Chat with Brian - KakaoTalk Clone</title>
   </head>
-  <body>
+  <body class="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -29,65 +29,51 @@
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">Brian Song</h1>
       </div>
       <div class="alt-header__column">
-        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+        <span><i class="fa-solid fa-bars fa-2x"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="setting__setting-column">
-            <i class="fa-solid fa-bullhorn"></i>
-            <span>Notices</span>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Sunday, January 14, 2024</div>
+
+      <div class="message-row">
+        <img
+          src="https://media.licdn.com/dms/image/C4D03AQEaWGfn0ZFUtw/profile-displayphoto-shrink_100_100/0/1571695781715?e=1710374400&v=beta&t=8dVL-k8-snZZLDzr_FEOVj-wzNqbA6JxlLo2oENJt9Q"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Brian Song</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">04:02</span>
           </div>
-          <div class="setting__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="setting__setting-column">
-            <i class="fa-solid fa-flask"></i>
-            <span>Kokoa Lab</span>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Nice to meet you!</span>
+            <span class="message__time">04:04</span>
           </div>
-          <div class="setting__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="setting__setting-column">
-            <i class="fa-solid fa-circle-info"></i>
-            <span>Version</span>
-          </div>
-          <div class="setting__setting-column">Latest Version</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="fa-regular fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <i class="fa-solid fa-magnifying-glass fa-2x"> </i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav__notification2"></span>
-            <i class="fa-solid fa-ellipsis fa-2x"> </i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-xl"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/a1f0a70375.js"
